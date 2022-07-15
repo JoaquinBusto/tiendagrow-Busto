@@ -1,0 +1,381 @@
+/* reset */
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.menuMobile{
+    display: none;
+}
+/* index */
+body{
+    background-color: beige;
+}
+.padre{
+    display: grid;
+    grid-template-rows: repeat(4,5% 5% 85% 5%);
+    grid-column-gap: 0;
+    grid-row-gap: 15px;
+}
+    
+.tiendaGrow {
+    text-shadow: 2px 2px rgb(0, 0, 0);
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+    color: green;
+}
+
+header {
+    margin: 10px 5px 5px 5px;
+} 
+
+.menu{
+    display: flex;
+    justify-content: right;
+    position: sticky;
+    margin-top: 30px;
+}
+
+.menu ul li {
+
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+    color: yellowgreen;
+    margin-top: 30px;
+    background-color: black;
+    display: inline-block;
+    margin: 2px;
+    padding: 4px;
+    position: relative;
+}
+
+.menu ul li:hover {
+    background-color: rgb(54, 52, 52);
+    transform: scale(1.2);
+}
+
+.colorPro {
+    font-family: 'Roboto', sans-serif;
+    color: gray;
+}
+
+.piePagina {
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    border: 1px double grey;
+   /* margin: 60px 800px 5px 5px; */
+}
+
+a {
+    font-weight: bold;
+    text-decoration: none;
+    color: yellowgreen;
+}
+
+.claseLogo {
+    width: 400px ;
+    height: 400px ;
+    margin: auto;
+    animation-name: claselogo;
+    animation-iteration-count: initial;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    position: relative;
+    
+   /* grid-area: imagen; */
+}
+@keyframes claselogo {
+    from{
+        transform: scale(0.5);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/*nosotros*/
+/*.pregunta{
+    display: none;
+}*/
+.somos {
+    background-color: beige;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 15px;
+}
+
+nav {
+    display: flex;
+    justify-content: right;
+    top: 0;
+    position: sticky;
+}
+
+nav ul li {
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+    color: yellowgreen;
+    margin: 0px 0px 0px 30px;
+    background-color: black;
+    display: inline-block;
+    margin: 2px;
+    padding: 4px;
+    position: relative;
+    
+}
+
+nav ul li:hover {
+    background-color: rgb(54, 52, 52);
+}
+
+.textoNosotros {
+    color: grey;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    background-color: beige;
+    margin: 0;
+    font-weight: bold;
+
+}
+
+p {
+    
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin: 20px 50px 50px 50px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.colorSemillas {
+    text-align: center;
+    list-style: none;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    font-weight: bold;
+}
+
+.colorClones {
+    text-align: center;
+    list-style: none;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    font-weight: bold;
+}
+
+#colorSub {
+    font-family: 'Roboto', sans-serif;
+    color: goldenrod;
+  
+    text-align: center;
+
+}
+
+.sectionNos {
+    background-color: beige;
+}
+
+/*productos*/
+.procuto{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+.payaso{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    align-items: end;
+
+}
+.colorSecu {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+
+}
+.menu ul li .subMenu {
+    display: none;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    padding: 0;
+    background-color: black
+}
+
+.menu ul li .subMenu li {
+    font-size: 12px;
+}
+
+.menu ul li:hover>.subMenu {
+    display: block;
+}
+.imgLion{
+    max-width: 70%;
+    max-height: 70%;
+}
+.lionUno{
+    max-width: 70%;
+    max-height: 70%;
+}
+
+/* contacto*/
+.formulario{
+    margin: 10px 50px 50px 10px;
+ }
+.colorForm {
+    color: maroon;
+}
+
+.colorNombre {
+    color: maroon;
+}
+
+.colorApellido {
+    color: maroon;
+}
+
+.colorEmail {
+    color: maroon;
+}
+
+/*cultivo*/
+.tituloSecu {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-weight: bold;
+}
+.claseVideo{
+    max-width: 400px ;
+    max-height: 400px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 90px;
+}
+.planta{
+    max-width: 400px ;
+    max-height: 400px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+}
+.menuMobile{
+    display: none;
+}
+/*mobile version*/
+@media (max-width: 600px){
+    body{
+        background-color: rgb(245, 220, 225);
+    }
+    header{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu{
+        display: none;
+    }
+    .menuMobile{
+        display: block;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        position: sticky ;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .menuMobile ul li .mobile{
+        display: none;
+        position: absolute;
+    }
+    .menuMobile ul li{
+        position: relative;
+        margin-top: 10px;
+
+    }
+    
+    .menuMobile ul li:hover>.mobile {
+        display: block;
+        background-color: black;
+        transform: scale(1.2);
+    }
+    .mobil{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        position: sticky;
+        font-weight: bold;
+        background-color: black;
+    }
+    .menuDos{
+        display: none;
+    }
+    .ejemplo{
+        display: none;
+    }
+    .claseLogo{
+       display: none;
+    }
+    .colorPro{
+        color: black;
+    }
+    .somos{
+        background-color: rgb(245, 220, 225);
+    }  
+    /*.payaso{
+        display: none;
+    }*/
+    .colorSecu{
+        display: none;
+    }
+    .colorDos{
+        background-color: rgb(245, 220, 225);
+        font-family: 'Roboto', sans-serif;
+        text-align: center;   
+    }
+    .colorPro{
+        background-color:rgb(245, 220, 225) ;
+    }
+    .textoNosotros{
+        background-color:rgb(245, 220, 225) ;
+        color: black;
+    }
+    #colorSub{
+        color: rgb(139, 12, 139);
+        margin-top: 300px;
+        margin-left: 0;
+        margin-bottom: 0;
+        margin-right: 0;
+
+    }
+    .piePagina{
+        margin-top: 60px;
+    }
+    .tiendaGrow{
+        margin-top: 30px;
+    }
+    .sectionNos{
+        background-color: rgb(245, 220, 225) ;
+    }
+
+
+
+}
