@@ -8,6 +8,7 @@
 .menuMobile{
     display: none;
 }
+
 /* index */
 body{
     background-color: beige;
@@ -57,6 +58,7 @@ header {
 }
 
 .colorPro {
+    margin-top: 10px;
     font-family: 'Roboto', sans-serif;
     color: gray;
 }
@@ -77,7 +79,7 @@ a {
 .claseLogo {
     width: 400px ;
     height: 400px ;
-    margin: auto;
+    margin: 10px;
     animation-name: claselogo;
     animation-iteration-count: initial;
     animation-duration: 5s;
@@ -99,6 +101,32 @@ a {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+}
+.redes{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    margin-top: 0;
+    display: contents;
+}
+.ig{
+    display: flex;
+    width: 2%;
+    height: 3%;
+}
+.tw{
+    display: flex;
+    width: 2%;
+    height: 3%;
+    margin-top: 5px;
+}
+#colorSub{
+    margin-top: 0px;
+    margin-left: 0;
+    margin-bottom: 0;
+    margin-right: 0;
+}
+.imagenUno{
+    display: none;
 }
 
 /*nosotros*/
@@ -222,13 +250,19 @@ p {
 .menu ul li:hover>.subMenu {
     display: block;
 }
-.imgLion{
+/*.imgLion{
     max-width: 70%;
     max-height: 70%;
+}*/
+.imagen{
+    margin-top: 15px;
+    width: 36.7%;
+    margin-left: 50px;
 }
-.lionUno{
-    max-width: 70%;
-    max-height: 70%;
+.productos{
+    margin-top: 15px;
+    width: 36.7%;
+    margin-left: 50px;
 }
 
 /* contacto*/
@@ -331,9 +365,6 @@ p {
     .ejemplo{
         display: none;
     }
-    .claseLogo{
-       display: none;
-    }
     .colorPro{
         color: black;
     }
@@ -360,7 +391,7 @@ p {
     }
     #colorSub{
         color: rgb(139, 12, 139);
-        margin-top: 300px;
+        margin-top: 0px;
         margin-left: 0;
         margin-bottom: 0;
         margin-right: 0;
@@ -375,7 +406,21 @@ p {
     .sectionNos{
         background-color: rgb(245, 220, 225) ;
     }
-
-
-
+    .ig{
+        width: 4%;
+        height: 2%;
+    }
+    .tw{
+        width: 4%;
+        height: 2%;
+    }
+    .claseLogo{
+        display: none;
+    }
+    .imagenUno{
+            display: block;
+            width: 400px ;
+            height: 400px ;
+            margin: 10px;
+    }
 }
