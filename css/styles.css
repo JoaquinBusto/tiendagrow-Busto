@@ -268,7 +268,7 @@ p {
 /* contacto*/
 .formulario{
     margin: 10px 50px 50px 10px;
-    background-image: linear-gradient(to bottom, white,rgb(245, 220, 225) );
+    background-image: linear-gradient(to bottom, white, beige);
     box-shadow: 3px 2px;
  }
 .colorForm {
@@ -309,6 +309,7 @@ p {
     margin-left: auto;
     margin-top: 20px;
 }
+
 .menuMobile{
     display: none;
 }
@@ -424,5 +425,9 @@ p {
             width: 400px ;
             height: 400px ;
             margin: 10px;
+    }
+    .formulario{
+        background-image: linear-gradient(to bottom, white,rgb(245, 220, 225) );
+        box-shadow: 3px 2px;
     }
 }
