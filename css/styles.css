@@ -85,8 +85,6 @@ a {
     animation-duration: 5s;
     animation-timing-function: linear;
     position: relative;
-    
-   /* grid-area: imagen; */
 }
 @keyframes claselogo {
     from{
@@ -130,9 +128,18 @@ a {
 }
 
 /*nosotros*/
-/*.pregunta{
-    display: none;
-}*/
+.menuNuevo{
+    font-family: 'Roboto', sans-serif;
+    color: green;
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: beige;
+}
+.extra{
+    background-color: beige;
+}
 .somos {
     background-color: beige;
     text-align: center;
@@ -215,6 +222,17 @@ p {
 .sectionNos {
     background-color: beige;
 }
+.tituloSecu{
+    margin-top: 10px;
+    text-align: center;
+}
+.texto{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin: 0;
+    font-weight: bold;
+    list-style: none;
+}
 
 /*productos*/
 .procuto{
@@ -250,10 +268,6 @@ p {
 .menu ul li:hover>.subMenu {
     display: block;
 }
-/*.imgLion{
-    max-width: 70%;
-    max-height: 70%;
-}*/
 .imagen{
     margin-top: 15px;
     width: 36.7%;
@@ -292,6 +306,7 @@ p {
     font-family: 'Roboto', sans-serif;
     text-align: center;
     font-weight: bold;
+    list-style: none;
 }
 .claseVideo{
     max-width: 400px ;
@@ -309,15 +324,24 @@ p {
     margin-left: auto;
     margin-top: 20px;
 }
-
+.colorSemillas{
+    list-style: none;
+}
 .menuMobile{
     display: none;
+}
+.parrafoUno{
+    list-style: none;
 }
 /*mobile version*/
 @media (max-width: 600px){
     body{
         background-color: rgb(245, 220, 225);
     }
+    .menuNuevo{
+        background-color: rgb(245, 220, 225);
+    }
+    
     header{
         display: flex;
         justify-content: center;
@@ -374,9 +398,6 @@ p {
     .somos{
         background-color: rgb(245, 220, 225);
     }  
-    /*.payaso{
-        display: none;
-    }*/
     .colorSecu{
         display: none;
     }

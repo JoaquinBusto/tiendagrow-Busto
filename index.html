@@ -12,101 +12,89 @@
     <link
         href="https://fonts.googleapis.com/css2? family=Roboto:ital,wght@0,100;1,500;1,700;1,900&family=Stick+No+Bills:wght@300;500&display=swap"
         rel="stylesheet">
-
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <!-- ANIMATE CSS-->
-    <link
-    rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- CSS -->
     <link rel="stylesheet" href="css/styles.css">
-  
+
     <title> Home-Tienda Grow</title>
 
 
 </head>
 
 <body>
-    <div class="padre">
-        <header class="animate__animated animate__rubberBand">
-            <h1 class="tiendaGrow">
-                Tienda Grow
-            </h1>
-
-        </header>
-        <nav class="menu">
-            <ul>
-                <li>
-                    Home
-                </li>
-                <li>
-                    <a href="pages/nosotros.html"> Nosotros</a>
-                </li>
-                <li>
-                    <a href="pages/productos.html"> Productos</a>
-                    <ul class="subMenu">
-                        <li class="ejemplo">Grinder</li>
-                        <li class="ejemplo">Clippers</li>
-                        <li class="ejemplo">Bandejas</li>
-                    </ul>
-
-
-                </li>
-                <li>
-                    <a href="pages/cultivo.html"> Cultivo </a>
-                </li>
-                <li>
-                    <a href="pages/contacto.html"> Contacto </a>
-
-                </li>
-
-            </ul>
-        </nav>
-        <nav class="menuMobile">
-            <ul>
-                <li>
-                    <a href="../index.html">
-                        Menu
-                        <ul class="mobile">
-                            <li>
-                                <a href="pages/nosotros.html"> Nosotros</a>
-                            </li>
-                            <li>
-                                <a href="pages/productos.html"> Productos</a>
-
-                            </li>
-                            <li>
-                                <a href="pages/cultivo.html"> Cultivo </a>
-                            </li>
-                            <li>
-                                <a href="pages/contacto.html"> Contacto </a>
-                            </li>
-                        </ul>
+    <div class="container">
+        <header class="row">
+          <h1 class="tiendaGrow col-5">
+            Tienda Grow
+          </h1>
+          <nav class="navbar navbar-expand-lg col-7">
+            <div class="container-fluid menuNuevo">
+              <a class="navbar-brand menuNuevo" href="#">Menu</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link menuNuevo" href="">Home</a>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link menuNuevo" href="pages/nosotros.html">Nosotros</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle menuNuevo" href="pages/productos.html" id="navbarDropdown" role="button">
+                      Productos
                     </a>
-                </li>
-            </ul>
-        </nav>
-        <main class="mainContainer">
-            <img src="img/calavera.jpg" alt="" class="imagenUno">
-            <nav>
-                <div class="claseLogo">
-                    <img src="img/groww.jpg" alt="" class="claseLogo">
-                </div>
-            </nav>
-            <h2 class="colorPro"> ¡Gracias por tu visita! </h2>
-        </main>
-        <footer id="piePagina">
-            <div>
-                <img src="img/ig.jpg" alt="" class="ig">
-                <p class="redes">
-                    @Tgshop
-                </p>
-                <img src="img/t.jpg" alt="" class="tw">
-                <p class="redes">
-                    @Tgshop
-                </p>
+                    <ul class="dropdown-menu extra" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item menuNuevo" href="#">Bandejas</a></li>
+                      <li><a class="dropdown-item menuNuevo" href="#">Grinder</a></li>
+                      <li><a class="dropdown-item menuNuevo" href="#">Clippers</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link menuNuevo" href="pages/cultivo.html">Cultivo</a>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link menuNuevo" href="pages/contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <h3 id="colorSub">todos los derechos reservados</h3>
-        </footer>
-    </div>
+          </nav>
+            <main class="mainContainer">
+                <img src="img/calavera.jpg" alt="calavera" class="imagenUno">
+                <nav>
+                    <div class="claseLogo">
+                        <img src="img/groww.jpg" alt="logo" class="claseLogo">
+                    </div>
+                </nav>
+                <h2 class="colorPro"> ¡Gracias por tu visita! </h2>
+            </main>
+            <footer id="piePagina">
+                <div>
+                    <img src="img/ig.jpg" alt="" class="ig">
+                    <p class="redes">
+                        @Tgshop
+                    </p>
+                    <img src="img/t.jpg" alt="" class="tw">
+                    <p class="redes">
+                        @Tgshop
+                    </p>
+                </div>
+                <h3 id="colorSub">todos los derechos reservados</h3>
+            </footer>
+        </div>
+    </section>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

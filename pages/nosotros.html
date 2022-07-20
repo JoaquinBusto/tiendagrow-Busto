@@ -2,123 +2,116 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <!-- ANIMATE CSS-->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-     <!--CSS-->
-    <link rel="stylesheet" href="../css/styles.css">
-    <title> Nosotros</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <!--CSS-->
+  <link rel="stylesheet" href="../css/styles.css">
+  <title> Nosotros</title>
 </head>
 
 <body>
-    <div class="padre">
-        <header class="animate__animated animate__rubberBand">
-
-            <h1 class="tiendaGrow">
-                Tienda Grow
-            </h1>
-        </header>
-        <nav class="menu">
-            <ul>
-                <li>
-                    <a href="../index.html">
-                        Home
-                    </a>
-                </li>
-                <li>
-                    <a> Nosotros</a>
-                </li>
-                <li>
-                    <a href="productos.html"> Productos</a>
-                    <ul class="subMenu">
-                        <li class="ejemplo">Picadores</li>
-                        <li class="ejemplo">Clippers</li>
-                        <li class="ejemplo">Bandejas</li>
-                    </ul>
-                <li>
-                    <a href="cultivo.html"> Cultivo </a>
-                </li>
-                <li>
-                    <a href="contacto.html"> Contacto </a>
-
-                </li>
-
-            </ul>
-        </nav>
-        <nav class="menuMobile">
-            <ul>
-                <li>
-                    <a href="../index.html">
-                        Menu
-                        <ul class="mobile">
-                            <li>
-                                <a href="nosotros.html"> Nosotros</a>
-                            </li>
-                            <li>
-                                <a href="productos.html"> Productos</a>
-
-                            </li>
-                            <li>
-                                <a href="cultivo.html"> Cultivo </a>
-                            </li>
-                            <li>
-                                <a href="contacto.html"> Contacto </a>
-                            </li>
-                        </ul>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-        <main>
-            <section class="sectionNos">
-                <h2 class="somos">
-                    ¿Quiénes somos?
-                </h2>
-                <p class="textoNosotros">
-
-                    En Tienda Grow nos dedicamos desde hace más de 15 años a la venta de insumos para cultivos.
-                    Contamos con la más amplia variedad de productos, todos de la mejor calidad y al precio más
-                    conveniente.
-                    Nos destacamos además por ofrecerte un asesoramiento profesional, para que te lleves exactamente lo
-                    que estás buscando, ya que tu satisfacción es nuestro principal objetivo.
-                </p>
-                <p class="tituloSecu">
-                    Estamos listos para ser tu Growshop de confianza.
-                </p>
-                <ul>
-                    <li class="textoNosotros">
-                        -Tenemos los productos de las marcas más importantes del mercado.
-                    </li>
-                    <li class="textoNosotros">
-                        -Hacemos entregas en el día a todo CABA y GBA. (Consultar horarios de entrega según la zona)
-                    </li>
-                    <li class="textoNosotros">
-                        -Despachamos a distintos puntos del país.
-                    </li>
-                    <li class="textoNosotros">
-                        -Podés retirar personalmente de manera discreta y rápida en Caballito, CABA.
-                    </li>
+  <div class="container">
+    <header class="row">
+      <h1 class="tiendaGrow col-5">
+        Tienda Grow
+      </h1>
+      <nav class="navbar navbar-expand-lg col-7">
+        <div class="container-fluid menuNuevo">
+          <a class="navbar-brand menuNuevo" href="#">Menu</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link menuNuevo" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link menuNuevo" href="#">Nosotros</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle menuNuevo" href="productos.html" id="navbarDropdown" role="button">
+                  Productos
+                </a>
+                <ul class="dropdown-menu extra" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item menuNuevo" href="#">Bandejas</a></li>
+                  <li><a class="dropdown-item menuNuevo" href="#">Grinder</a></li>
+                  <li><a class="dropdown-item menuNuevo" href="#">Clippers</a></li>
                 </ul>
-            </section>
-        </main>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link menuNuevo" href="cultivo.html">Cultivo</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link menuNuevo" href="contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <section>
+        <div class="container row">
+          <h2 class="somos col-12">
+            ¿Quiénes somos?
+          </h2>
+          <div class="row">
+            <p class="textoNosotros col-12 ">
+
+              En Tienda Grow nos dedicamos desde hace más de 15 años a la venta de insumos para cultivos.
+              Contamos con la más amplia variedad de productos, todos de la mejor calidad y al precio más
+              conveniente.
+              Nos destacamos además por ofrecerte un asesoramiento profesional, para que te lleves exactamente lo
+              que estás buscando, ya que tu satisfacción es nuestro principal objetivo.
+            </p>
+          </div>
+          <div class="row">
+            <p class="tituloSecu col-12">
+              Estamos listos para ser tu Growshop de confianza.
+            </p>
+          </div>
+          <ul class="row">
+            <li class="texto col-3">
+              -Tenemos los productos de las marcas más importantes del mercado.
+            </li>
+            <li class="texto col-3">
+              -Hacemos entregas en el día a todo CABA y GBA. (Consultar horarios de entrega según la zona)
+            </li>
+            <li class="texto col-3">
+              -Despachamos a distintos puntos del país.
+            </li>
+            <li class="texto col-3">
+              -Podés retirar personalmente de manera discreta y rápida en Caballito, CABA.
+            </li>
+          </ul>
+
+        </div>
+      </section>
 
 
-        <footer id="piePagina">
-            <div>
-                <img src="../img/ig.jpg" alt="" class="ig">
-                <p class="redes">
-                    @Tgshop
-                </p>
-                <img src="../img/t.jpg" alt="" class="tw">
-                <p class="redes">
-                    @Tgshop
-                </p>
-            </div>
-            <h3 id="colorSub">todos los derechos reservados</h3>
-        </footer>
-    </div>
+      <footer id="piePagina">
+        <div>
+          <img src="../img/ig.jpg" alt="insta" class="ig">
+          <p class="redes">
+            @Tgshop
+          </p>
+          <img src="../img/t.jpg" alt="twitter" class="tw">
+          <p class="redes">
+            @Tgshop
+          </p>
+        </div>
+        <h3 id="colorSub">todos los derechos reservados</h3>
+      </footer>
+  </div>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
