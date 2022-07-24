@@ -126,7 +126,20 @@ a {
 .imagenUno{
     display: none;
 }
+.tres{
+    display: flex;
+    width: 15%;
+    margin-top: 5px;
 
+}
+.subtitulo{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    margin-top: 20px;
+}
 /*nosotros*/
 .menuNuevo{
     font-family: 'Roboto', sans-serif;
@@ -334,7 +347,7 @@ p {
     list-style: none;
 }
 /*mobile version*/
-@media (max-width: 600px){
+@media (max-width: 576px) and (min-width: 280px) {
     body{
         background-color: rgb(245, 220, 225);
     }
@@ -451,4 +464,5 @@ p {
         background-image: linear-gradient(to bottom, white,rgb(245, 220, 225) );
         box-shadow: 3px 2px;
     }
+   
 }
