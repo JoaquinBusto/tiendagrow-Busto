@@ -1,0 +1,139 @@
+/* reset */
+* {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+    }
+    .menuMobile{
+        display: none;
+    }
+    //variables 
+    $colorPrincipal: beige;
+    $colorSecundario: gray;
+    $fuenteOriginal: 'Roboto', sans-serif;
+
+    /* index */
+    body{
+        background-color: $colorPrincipal;
+    }
+        
+    .tiendaGrow {
+        text-shadow: 2px 2px rgb(0, 0, 0);
+        font-family: $fuenteOriginal;
+        font-size: 50px;
+        color: green;
+    }
+    header {
+        margin: 10px 5px 5px 5px;
+    } 
+
+    .menuNuevo{
+        display: flex;
+        justify-content: right;
+        position: sticky;
+        margin-top: 30px;
+        ul{
+        li {
+        font-weight: bold;
+        font-family: $fuenteOriginal;
+        list-style: none;
+        color: yellowgreen;
+        margin-top: 30px;
+        background-color: $colorPrincipal;
+        display: inline-block;
+        margin: 2px;
+        padding: 4px;
+        position: relative;
+        }
+        }
+ }
+   
+    
+    a {
+        font-weight: bold;
+        text-decoration: none;
+        color: yellowgreen;
+    }
+  
+    @keyframes claselogo {
+        from{
+            transform: scale(0.5);
+        }
+        to{
+            transform: scale(1);
+        }
+    }
+    .mainContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        .claseLogo {
+                width: 400px ;
+                height: 400px ;
+                margin: 10px;
+                animation-name: claselogo;
+                animation-iteration-count: initial;
+                animation-duration: 5s;
+                animation-timing-function: linear;
+                position: relative;
+            }
+        .colorPro {
+                margin-top: 10px;
+                font-family: 'Roboto', sans-serif;
+                color: $colorSecundario;
+        }
+    }
+    .colorPro {
+        margin-top: 10px;
+        font-family: $fuenteOriginal;
+        color: $colorSecundario;
+    }
+    div .tres{
+        display: flex;
+        width: 15%;
+        margin-top: 5px;
+    }
+    div .subtitulo{
+        font-family: $fuenteOriginal;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        font-size: 12px;
+        margin-top: 20px;
+        
+    }
+    .piePagina {
+        padding: 10px;
+        font-family: $fuenteOriginal;
+        border: 1px double $colorSecundario;
+        div  .redes{
+                font-family: $fuenteOriginal;
+                font-weight: bold;
+                margin-top: 0;
+                display: contents;
+            } 
+    }
+    .ig{
+        display: flex;
+        width: 2%;
+        height: 3%;
+    }
+    .tw{
+        display: flex;
+        width: 2%;
+        height: 3%;
+        margin-top: 5px;
+    }
+    .imagenUno{
+        display: none;
+    }
+    #colorSub{
+        margin-top: 0px;
+        margin-left: 0;
+        margin-bottom: 0;
+        margin-right: 0;
+        text-align: center;
+    }
+    
+    
