@@ -1,0 +1,13 @@
+/*Productos*/
+@import "base/mixin";
+.colorSecu {
+    @include texto;
+    font-weight: bold;
+    
+}
+.marcas{
+    @include texto;
+}
+ul .adicional{
+    background-color: $colorPrincipal;
+}

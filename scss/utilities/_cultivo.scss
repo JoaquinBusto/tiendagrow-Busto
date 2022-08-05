@@ -1,0 +1,25 @@
+/*Cultivo*/
+.tituloSecu {
+    @extend %principal;
+    list-style: none;
+}
+div .parrafoUno{
+    list-style: none;
+}
+.colorSemillas{
+    list-style: none;
+}
+.claseVideo{
+    @include medidas(400px, 400px);
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 90px;
+}
+.planta{
+    @include medidas(400px, 400px);
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+}

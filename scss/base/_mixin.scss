@@ -1,0 +1,12 @@
+//mixin
+// con parametros
+@mixin texto{
+    font-family: $fuenteOriginal;
+     text-align: center;
+}
+
+//sin parametros
+@mixin medidas($width, $heigth){
+    width: $width;
+    height: $heigth;
+}

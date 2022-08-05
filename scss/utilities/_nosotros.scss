@@ -1,0 +1,23 @@
+/*nosotros*/
+@import "base/mixin";
+.somos {
+    background-color: $colorPrincipal;
+    @include texto;
+    margin-top: 15px;
+    font-weight: bold;
+}
+.textoNosotros {
+    color: $colorFuente;
+    @include texto;
+    background-color: $colorPrincipal;
+    margin: 0;
+}
+.tituloSecu{
+    margin-top: 10px;
+    text-align: center;
+}
+ul .texto{
+    @extend %principal;
+    margin: 0;
+    list-style: none;
+}

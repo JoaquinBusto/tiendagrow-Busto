@@ -7,10 +7,112 @@
 .menuMobile {
   display: none; }
 
-/*import*/
+/*nosotros*/
+.somos {
+  background-color: #f5dce1;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  margin-top: 15px;
+  font-weight: bold; }
+
+.textoNosotros {
+  color: black;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  background-color: #f5dce1;
+  margin: 0; }
+
+.tituloSecu {
+  margin-top: 10px;
+  text-align: center; }
+
+ul .texto {
+  margin: 0;
+  list-style: none; }
+
+/*Productos*/
+.colorSecu {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-weight: bold; }
+
+.marcas {
+  font-family: "Roboto", sans-serif;
+  text-align: center; }
+
+ul .adicional {
+  background-color: #f5dce1; }
+
+/*Cultivo*/
+.tituloSecu {
+  list-style: none; }
+
+div .parrafoUno {
+  list-style: none; }
+
+.colorSemillas {
+  list-style: none; }
+
+.claseVideo {
+  width: 400px;
+  height: 400px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 90px; }
+
+.planta {
+  width: 400px;
+  height: 400px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20px; }
+
+/*contacto*/
+.formulario {
+  margin: 10px 50px 50px 10px;
+  background-image: linear-gradient(to bottom, white, #f5dce1);
+  box-shadow: 3px 2px;
+  font-family: "Roboto", sans-serif;
+  text-align: center; }
+
+.colorForm {
+  color: black;
+  text-align: center; }
+
+.colorNombre {
+  color: black; }
+
+.colorApellido {
+  color: black; }
+
+.colorEmail {
+  color: black; }
+
+/*mediaqueries*/
+@media (max-width: 576px) and (min-width: 280px) {
+  body {
+    background-color: #f5dce1; }
+  .menuNuevo {
+    background-color: #f5dce1; }
+  .somos {
+    background-color: #f5dce1; }
+  .ig {
+    width: 3%;
+    height: 3%; }
+  .tw {
+    width: 3%;
+    height: 3%; } }
+
+ul .texto, .tituloSecu {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-weight: bold; }
+
 /* index*/
 body {
-  background-color: beige; }
+  background-color: #f5dce1; }
 
 .tiendaGrow {
   text-shadow: 2px 2px black;
@@ -30,9 +132,9 @@ header {
     font-weight: bold;
     font-family: "Roboto", sans-serif;
     list-style: none;
-    color: yellowgreen;
+    color: black;
     margin-top: 30px;
-    background-color: beige;
+    background-color: #f5dce1;
     display: inline-block;
     margin: 2px;
     padding: 4px;
@@ -41,7 +143,7 @@ header {
 a {
   font-weight: bold;
   text-decoration: none;
-  color: yellowgreen; }
+  color: black; }
 
 @keyframes claselogo {
   from {
@@ -65,7 +167,7 @@ a {
     position: relative; }
   .mainContainer .colorPro {
     margin-top: 10px;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     color: gray; }
 
 .colorPro {
@@ -98,21 +200,17 @@ div .subtitulo {
 
 .ig {
   display: flex;
-  width: 2%;
-  height: 3%; }
+  width: 3%;
+  height: 4%; }
 
 .tw {
   display: flex;
-  width: 2%;
-  height: 3%;
-  margin-top: 5px; }
+  width: 3%;
+  height: 4%;
+  margin-top: 10px; }
 
 .imagenUno {
   display: none; }
 
 #colorSub {
-  margin-top: 0px;
-  margin-left: 0;
-  margin-bottom: 0;
-  margin-right: 0;
   text-align: center; }

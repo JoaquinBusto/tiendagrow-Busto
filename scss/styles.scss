@@ -9,12 +9,21 @@
     display: none;
 }
 
-/*import*/
-@import "utilities/variables";
+//import
+@import "base/variables";
+@import "utilities/nosotros";
+@import "utilities/productos";
+@import "utilities/cultivo";
+@import "utilities/contacto";
+@import "utilities/mediaqueries";
+@import "base/mixin";
+@import "base/maps";
+@import "base/extend";
+
 
 /* index*/
 body {
-      background-color: $colorPrincipal ;
+    background-color: $colorPrincipal ;
 }
 
 .tiendaGrow {
@@ -39,7 +48,7 @@ header {
             font-weight: bold;
             font-family: $fuenteOriginal;
             list-style: none;
-            color: yellowgreen;
+            color: $colorFormulario;
             margin-top: 30px;
             background-color: $colorPrincipal;
             display: inline-block;
@@ -54,7 +63,7 @@ header {
 a {
     font-weight: bold;
     text-decoration: none;
-    color: yellowgreen;
+    color: $colorFormulario;
 }
 
 @keyframes claselogo {
@@ -74,8 +83,7 @@ a {
     align-items: center;
 
     .claseLogo {
-        width: 400px;
-        height: 400px;
+        @include medidas(400px, 400px);
         margin: 10px;
         animation-name: claselogo;
         animation-iteration-count: initial;
@@ -86,7 +94,7 @@ a {
 
     .colorPro {
         margin-top: 10px;
-        font-family: 'Roboto', sans-serif;
+        font-family: $fuenteOriginal;
         color: $colorSecundario;
     }
 }
@@ -110,6 +118,10 @@ div .subtitulo {
     justify-content: center;
     font-size: 12px;
     margin-top: 20px;
+    .standar {
+        width: map-get($map: $subtitulo-standar, $key: width-standar);
+        height: map-get($map: $subtitulo-standar, $key: height-standar);
+    }
 
 }
 
@@ -128,15 +140,15 @@ div .subtitulo {
 
 .ig {
     display: flex;
-    width: 2%;
-    height: 3%;
+    width: 3%;
+    height: 4%;
 }
 
 .tw {
     display: flex;
-    width: 2%;
-    height: 3%;
-    margin-top: 5px;
+    width: 3%;
+    height: 4%;
+    margin-top: 10px;
 }
 
 .imagenUno {
@@ -144,9 +156,5 @@ div .subtitulo {
 }
 
 #colorSub {
-    margin-top: 0px;
-    margin-left: 0;
-    margin-bottom: 0;
-    margin-right: 0;
     text-align: center;
-}
+};
