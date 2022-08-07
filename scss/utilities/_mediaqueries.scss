@@ -3,12 +3,16 @@
     body{
         background-color: rgb(245, 220, 225);
     }
+    .tiendaGrow {
+        text-align: center;
+        width: 100%;
+    }
     .menuNuevo{
         background-color: rgb(245, 220, 225);
+        margin-top: 3px;
     }
-
     .somos{
-    background-color: rgb(245, 220, 225);
+        color: $colorSecundario;
     }  
     .ig{
         width: 3%;

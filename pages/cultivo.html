@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="descripcion" content="¿Qué tipos de semillas de marihuana hay?">
    <meta name="keywords" content="CULTIVO, HTML, JS,META">
+   <!--TIPOGRAFIA-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
@@ -17,47 +21,43 @@
 </head>
 
 <body>
-    <div class="container">
-        <header class="row">
-          <h1 class="tiendaGrow col-5">
-            Tienda Grow
-          </h1>
-          <nav class="navbar navbar-expand-lg col-7">
-            <div class="container-fluid menuNuevo">
-              <a class="navbar-brand menuNuevo" href="#"></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+  <div class="container">
+    <header class="row">
+      <div class="menuCentro">
+      <h1 class="tiendaGrow col-5">
+        Tienda Grow
+      </h1>
+      </div>  
+        <div class="container-fluid">
+          <nav class="centro navbar navbar-expand-lg">
+            <button class="menuNuevo navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link menuNuevo" href="../index.html">Home</a>
-                  </li>
-                  <li class="nav-item ">
-                    <a class="nav-link menuNuevo" href="nosotros.html">Nosotros</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle menuNuevo" href="productos.html" id="navbarDropdown" role="button">
-                      Productos
-                    </a>
-                    <ul class="dropdown-menu extra" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item menuNuevo" href="#">Bandejas</a></li>
-                      <li><a class="dropdown-item menuNuevo" href="#">Grinder</a></li>
-                      <li><a class="dropdown-item menuNuevo" href="#">Clippers</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link menuNuevo" href="cultivo.html">Cultivo</a>
-                  </li>
-                  <li class="nav-item ">
-                    <a class="nav-link menuNuevo" href="contacto.html">Contacto</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
+          <div class="centro collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbarColor navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link menuNuevo" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link menuNuevo" href="nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link menuNuevo" href="productos.html" id="navbarDropdown" role="button">
+                  Productos
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link menuNuevo" href="">Cultivo</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link menuNuevo" href="contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
 
         <main>
             <header class="pregPrincipal">
@@ -98,7 +98,7 @@
                         -Semillas regulares fotodependientes:
 
                     </li>
-                    <p class="parraforUno">
+                    <p class="parrafoUno">
                         Surgen de la polinización de flores de plantas hembra a plantas macho. De estas semillas surgen
                         plantas de ambos sexos. Si queremos obtener cogollos tendremos que separarlas en cuanto sepamos
                         el género de cada una. Sin embargo, estas semillas nos abren la posibilidad de realizar cruces
@@ -125,10 +125,6 @@
                 <img src="../img/planti.png" alt="" class="planta">
 
             </div>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/bOJ-wXs8-5k"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen class="claseVideo"></iframe>
 
         </main>
 
@@ -138,15 +134,15 @@
         <footer id="piePagina">
             <div>
                 <img src="../img/ig.jpg" alt="" class="ig">
-                <p class="redes">
+                <p class="ig">
                     @Tgshop
                 </p>
                 <img src="../img/t.jpg" alt="" class="tw">
-                <p class="redes">
+                <p class="tw">
                     @Tgshop
                 </p>
             </div>
-            <h3 id="colorSub">todos los derechos reservados</h3>
+            <h4 id="colorSub">todos los derechos reservados</h4>
         </footer>
     </div>
     <!-- JavaScript Bundle with Popper -->

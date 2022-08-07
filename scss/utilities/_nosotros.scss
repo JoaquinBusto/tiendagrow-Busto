@@ -1,23 +1,31 @@
 /*nosotros*/
 @import "base/mixin";
 .somos {
-    background-color: $colorPrincipal;
+    background-color:black;
+    color: $colorSecundario;
     @include texto;
     margin-top: 15px;
     font-weight: bold;
+    font-family: $fuenteOriginal
 }
 .textoNosotros {
-    color: $colorFuente;
+    color: $colorSecundario;
     @include texto;
     background-color: $colorPrincipal;
     margin: 0;
+    font-family: $fuenteOriginal
+   
 }
 .tituloSecu{
     margin-top: 10px;
     text-align: center;
+    color: $colorSecundario;
+    font-family: $fuenteOriginal;
 }
 ul .texto{
     @extend %principal;
     margin: 0;
     list-style: none;
+    color: $colorSecundario;
+    font-family: $fuenteOriginal;
 }

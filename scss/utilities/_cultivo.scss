@@ -2,22 +2,18 @@
 .tituloSecu {
     @extend %principal;
     list-style: none;
+    color: $colorSecundario;
 }
 div .parrafoUno{
     list-style: none;
+    color: $colorSecundario;
 }
 .colorSemillas{
     list-style: none;
-}
-.claseVideo{
-    @include medidas(400px, 400px);
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 90px;
+    color: $colorSecundario;
 }
 .planta{
-    @include medidas(400px, 400px);
+    @include medidas(40%, 440%);
     display: block;
     margin-right: auto;
     margin-left: auto;

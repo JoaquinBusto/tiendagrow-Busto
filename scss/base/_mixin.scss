@@ -3,6 +3,7 @@
 @mixin texto{
     font-family: $fuenteOriginal;
      text-align: center;
+     color: $colorSecundario;
 }
 
 //sin parametros
