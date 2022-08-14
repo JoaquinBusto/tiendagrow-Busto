@@ -9,47 +9,47 @@
 
 /*nosotros*/
 .somos {
-  background-color: black;
-  color: #f5dce1;
+  background-color: white;
   font-family: "Titillium Web", sans-serif;
   text-align: center;
-  color: #f5dce1;
+  color: black;
   margin-top: 15px;
   font-weight: bold;
   font-family: "Titillium Web", sans-serif; }
 
 .textoNosotros {
-  color: #f5dce1;
+  color: black;
   font-family: "Titillium Web", sans-serif;
   text-align: center;
-  color: #f5dce1;
-  background-color: black;
-  margin: 0;
-  font-family: "Titillium Web", sans-serif; }
+  color: black;
+  background-color: white;
+  margin: 0; }
 
-.tituloSecu {
-  margin-top: 10px;
+.secundario {
+  color: black;
+  font-family: "Titillium Web", sans-serif;
   text-align: center;
-  color: #f5dce1;
-  font-family: "Titillium Web", sans-serif; }
+  color: black;
+  font-weight: bold;
+  list-style: none; }
 
-ul .texto {
-  margin: 0;
+.texto {
+  color: black;
   list-style: none;
-  color: #f5dce1;
-  font-family: "Titillium Web", sans-serif; }
+  font-weight: bold; }
 
 /*Productos*/
 .colorSecu {
   font-family: "Titillium Web", sans-serif;
   text-align: center;
-  color: #f5dce1;
+  color: black;
   font-weight: bold; }
 
 .marcas {
   font-family: "Titillium Web", sans-serif;
   text-align: center;
-  color: #f5dce1; }
+  color: black;
+  font-size: small; }
 
 ul .adicional {
   background-color: #f5dce1; }
@@ -57,15 +57,18 @@ ul .adicional {
 /*Cultivo*/
 .tituloSecu {
   list-style: none;
-  color: #f5dce1; }
+  color: black;
+  font-size: x-large; }
 
 div .parrafoUno {
   list-style: none;
-  color: #f5dce1; }
+  color: black;
+  font-family: "Titillium Web", sans-serif; }
 
 .colorSemillas {
   list-style: none;
-  color: #f5dce1; }
+  color: black;
+  font-family: "Titillium Web", sans-serif; }
 
 .planta {
   width: 40%;
@@ -81,20 +84,20 @@ div .parrafoUno {
   background-color: transparent;
   font-family: "Titillium Web", sans-serif;
   text-align: center;
-  color: #f5dce1; }
+  color: black; }
 
 .colorForm {
-  color: #f5dce1;
+  color: black;
   text-align: center; }
 
 .colorNombre {
-  color: #f5dce1; }
+  color: black; }
 
 .colorApellido {
-  color: #f5dce1; }
+  color: black; }
 
 .colorEmail {
-  color: #f5dce1; }
+  color: black; }
 
 /*mediaqueries*/
 @media (max-width: 576px) and (min-width: 280px) {
@@ -105,9 +108,12 @@ div .parrafoUno {
     width: 100%; }
   .menuNuevo {
     background-color: #f5dce1;
-    margin-top: 3px; }
+    display: flex;
+    justify-content: center; }
   .somos {
-    color: #f5dce1; }
+    color: black; }
+  .texto {
+    font-size: x-small; }
   .ig {
     width: 3%;
     height: 3%; }
@@ -115,33 +121,37 @@ div .parrafoUno {
     width: 3%;
     height: 3%; } }
 
-ul .texto, .tituloSecu {
+.tituloSecu {
   font-family: "Titillium Web", sans-serif;
   text-align: center;
   font-weight: bold; }
 
 /* index*/
 body {
-  background-color: black; }
+  background-color: white; }
 
 .tiendaGrow {
-  text-shadow: 2px 2px whitesmoke;
+  text-shadow: 2px 2px black;
   font-family: "Titillium Web", sans-serif;
   font-size: 50px;
-  color: #f5dce1; }
+  color: #006400; }
 
 header {
   margin: 10px 5px 5px 5px; }
 
+.menuPro {
+  display: flex;
+  width: 100%;
+  flex-direction: column-reverse; }
+
 .menuCentro {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start; }
+  flex-direction: row; }
 
 .centro {
   display: flex;
   flex-direction: row;
-  justify-content: right; }
+  justify-content: flex-start; }
 
 .navbarColor {
   background-color: #f5dce1; }
@@ -192,15 +202,11 @@ a {
   .mainContainer .colorPro {
     margin-top: 10px;
     font-family: "Titillium Web", sans-serif;
-    color: #f5dce1; }
-
-.colorPro {
-  margin-top: 10px;
-  font-family: "Titillium Web", sans-serif;
-  color: #f5dce1; }
+    color: black; }
 
 .triple {
-  color: #f5dce1; }
+  color: black;
+  font-family: "Titillium Web", sans-serif; }
 
 div .tres {
   display: flex;
@@ -208,7 +214,7 @@ div .tres {
   margin-top: 5px; }
 
 div .subtitulo {
-  color: #f5dce1;
+  color: black;
   font-family: "Titillium Web", sans-serif;
   font-weight: bold;
   display: flex;
@@ -217,28 +223,23 @@ div .subtitulo {
   margin-top: 20px; }
 
 .piePagina {
-  padding: 10px;
-  font-family: "Titillium Web", sans-serif;
-  border: 1px double whitesmoke; }
+  font-family: "Titillium Web", sans-serif; }
   .piePagina div .redes {
     font-family: "Titillium Web", sans-serif;
     font-weight: bold;
-    margin-top: 0;
     display: contents;
-    color: #f5dce1; }
+    color: #006400; }
 
 .ig {
   display: flex;
   width: 3%;
-  height: 4%;
-  color: #f5dce1; }
+  height: 4%; }
 
 .tw {
   display: flex;
   width: 3%;
   height: 4%;
-  margin-top: 10px;
-  color: #f5dce1; }
+  margin-top: 10px; }
 
 .imagenUno {
   display: none; }
@@ -246,6 +247,6 @@ div .subtitulo {
 #colorSub {
   width: 100%;
   text-align: center;
-  color: #f5dce1;
+  color: #006400;
   display: flex;
   flex-direction: column; }

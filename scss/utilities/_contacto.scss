@@ -2,19 +2,19 @@
 @import "base/mixin";
 .formulario{
     margin: 10px 50px 50px 10px;
-    background-color: transparent;
+    background-color:transparent;
     @include texto;
  }
 .colorForm {
-    color:$colorSecundario;
+    color:$textos;
     text-align: center;
 }
 .colorNombre {
-    color: $colorSecundario;
+    color: $textos;
 }
 .colorApellido {
-    color: $colorSecundario;
+    color: $textos;
 }
 .colorEmail {
-    color: $colorSecundario;
+    color: $textos;
 };

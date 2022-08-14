@@ -2,15 +2,18 @@
 .tituloSecu {
     @extend %principal;
     list-style: none;
-    color: $colorSecundario;
+    color: $textos;
+    font-size: x-large;
 }
 div .parrafoUno{
     list-style: none;
-    color: $colorSecundario;
+    color: $textos;
+    font-family: $fuenteOriginal;
 }
 .colorSemillas{
     list-style: none;
-    color: $colorSecundario;
+    color: $textos;
+    font-family: $fuenteOriginal;
 }
 .planta{
     @include medidas(40%, 440%);

@@ -26,25 +26,28 @@ body {
 }
 
 .tiendaGrow {
-    text-shadow: 2px 2px whitesmoke;
+    text-shadow: 2px 2px black;
     font-family: $fuenteOriginal;
     font-size: 50px;
-    color: #f5dce1;
+    color: #006400;
 }
 
 header {
     margin: 10px 5px 5px 5px;
 }
+.menuPro{
+    display:flex;
+    width: 100%;
+    flex-direction: column-reverse;
+}
 .menuCentro{
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-
 }
 .centro{
     display: flex;
     flex-direction: row;
-    justify-content: right;
+    justify-content: flex-start;
    
 }
 .navbarColor{
@@ -109,17 +112,12 @@ a {
     .colorPro {
         margin-top: 10px;
         font-family: $fuenteOriginal;
-        color: $colorSecundario;
+        color: $textos;
     }
 }
-
-.colorPro {
-    margin-top: 10px;
-    font-family: $fuenteOriginal;
-    color: $colorSecundario;
-}
 .triple{
-    color: $colorSecundario;
+    color: $textos;
+    font-family: $fuenteOriginal;
 }
 
 div .tres {
@@ -130,7 +128,7 @@ div .tres {
 }
 
 div .subtitulo {
-    color:$colorSecundario;
+    color:$textos;
     font-family: $fuenteOriginal;
     font-weight: bold;
     display: flex;
@@ -142,17 +140,15 @@ div .subtitulo {
 }
 
 .piePagina {
-    padding: 10px;
+  
     font-family: $fuenteOriginal;
-    border: 1px double whitesmoke;
     
 
     div .redes {
         font-family: $fuenteOriginal;
         font-weight: bold;
-        margin-top: 0;
         display: contents;
-        color: $colorSecundario;
+        color: $opaco;
     }
 }
 
@@ -160,7 +156,6 @@ div .subtitulo {
     display: flex;
     width: 3%;
     height: 4%;
-    color: $colorSecundario;
 }
 
 .tw {
@@ -168,7 +163,6 @@ div .subtitulo {
     width: 3%;
     height: 4%;
     margin-top: 10px;
-    color: $colorSecundario;
 }
 
 .imagenUno {
@@ -178,7 +172,7 @@ div .subtitulo {
 #colorSub {
     width: 100%;
     text-align: center;
-    color: $colorSecundario;
+    color: $opaco;
     display: flex;
     flex-direction: column;
 
