@@ -4,9 +4,6 @@
   margin: 0px;
   box-sizing: border-box; }
 
-.menuMobile {
-  display: none; }
-
 /*nosotros*/
 .somos {
   background-color: white;
@@ -17,6 +14,16 @@
   font-weight: bold;
   font-family: "Titillium Web", sans-serif; }
 
+.menuTres {
+  grid-column: 1/3;
+  grid-row: 2/3;
+  width: 100%;
+  display: flex; }
+
+.nosotros {
+  grid-column: 1/2;
+  grid-row: 3/4; }
+
 .textoNosotros {
   color: black;
   font-family: "Titillium Web", sans-serif;
@@ -25,18 +32,26 @@
   background-color: white;
   margin: 0; }
 
-.secundario {
-  color: black;
-  font-family: "Titillium Web", sans-serif;
-  text-align: center;
-  color: black;
-  font-weight: bold;
-  list-style: none; }
-
-.texto {
-  color: black;
-  list-style: none;
-  font-weight: bold; }
+.confianza {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  display: flex;
+  align-content: flex-start;
+  justify-content: center;
+  margin-top: 55px; }
+  .confianza .secundario {
+    color: black;
+    font-family: "Titillium Web", sans-serif;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    list-style: none;
+    font-size: medium; }
+  .confianza .texto {
+    color: black;
+    list-style: none;
+    font-weight: bold;
+    font-size: small; }
 
 /*Productos*/
 .colorSecu {
@@ -45,20 +60,96 @@
   color: black;
   font-weight: bold; }
 
-.marcas {
+.padreTres {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 10% 10% 35% 35% 10%; }
+
+.derechos {
   font-family: "Titillium Web", sans-serif;
-  text-align: center;
-  color: black;
-  font-size: small; }
+  font-size: x-small;
+  grid-column: 1/4;
+  align-items: center;
+  display: flex;
+  width: 100%; }
 
 ul .adicional {
   background-color: #f5dce1; }
 
+.contenedorRedes {
+  grid-column: 1/2; }
+
+.boton {
+  color: black; }
+
+.fotoUno {
+  width: 20%;
+  height: 25%;
+  justify-content: center;
+  align-items: flex-start;
+  grid-column: 1/2; }
+
+.fotoDos {
+  width: 20%;
+  height: 25%;
+  justify-content: center;
+  align-items: flex-start;
+  grid-column: 2/3; }
+
+.fotoTres {
+  width: 20%;
+  height: 25%;
+  justify-content: center;
+  align-items: flex-start;
+  grid-column: 3/4; }
+
+.fotoCuatro {
+  width: 20%;
+  height: 25%;
+  justify-content: center;
+  align-items: flex-start;
+  grid-column: 1/2; }
+
+.fotoCinco {
+  width: 20%;
+  height: 25%;
+  justify-content: center;
+  align-items: flex-start;
+  grid-column: 2/3; }
+
+.fotoSeis {
+  width: 20%;
+  height: 25%;
+  justify-content: center;
+  align-items: flex-start;
+  grid-column: 3/4; }
+
+.colorSub {
+  color: #006400;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-end;
+  grid-column: 1/3;
+  width: 100%; }
+
 /*Cultivo*/
+.padreDos {
+  height: 100vh;
+  display: grid;
+  grid-template-areas: "titulo titulo" "menu menu" "parrafo parrafo" "redes footer";
+  grid-template-rows: 10% 10% auto 10%;
+  grid-template-columns: 50% 50%; }
+
 .tituloSecu {
   list-style: none;
   color: black;
   font-size: x-large; }
+
+.parrafo {
+  grid-area: parrafo; }
 
 div .parrafoUno {
   list-style: none;
@@ -78,38 +169,57 @@ div .parrafoUno {
   margin-left: auto;
   margin-top: 20px; }
 
+.secundario {
+  list-style: none; }
+
 /*contacto*/
 .formulario {
-  margin: 10px 50px 50px 10px;
-  background-color: transparent;
+  background-color: #f5dce1;
   font-family: "Titillium Web", sans-serif;
   text-align: center;
-  color: black; }
+  color: black;
+  border: 3px solid; }
+
+.casilla {
+  grid-column: 1/3;
+  grid-row: 3/4; }
 
 .colorForm {
   color: black;
   text-align: center; }
 
-.colorNombre {
-  color: black; }
-
-.colorApellido {
-  color: black; }
-
-.colorEmail {
+.datos {
   color: black; }
 
 /*mediaqueries*/
-@media (max-width: 576px) and (min-width: 280px) {
-  body {
-    background-color: #f5dce1; }
+@media (max-width: 576px) {
   .tiendaGrow {
     text-align: center;
-    width: 100%; }
-  .menuNuevo {
-    background-color: #f5dce1;
+    grid-column: 1; }
+  .centro {
     display: flex;
+    width: 100%;
+    grid-column: 1;
     justify-content: center; }
+  .inicio {
+    display: none; }
+  .detalles {
+    grid-column: 1/3;
+    grid-row: 3/5; }
+  .contenedorRedes {
+    grid-row: 5/6; }
+  .nosotros {
+    grid-column: 1/3;
+    grid-row: 3/4;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center; }
+  .confianza {
+    grid-column: 1/3;
+    grid-row: 4/5;
+    display: flex;
+    padding: 15px;
+    align-content: flex-end; }
   .somos {
     color: black; }
   .texto {
@@ -119,7 +229,32 @@ div .parrafoUno {
     height: 3%; }
   .tw {
     width: 3%;
-    height: 3%; } }
+    height: 3%; }
+  .padreTres {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    justify-content: center; }
+  .fotoUno {
+    width: unset;
+    grid-column: 1; }
+  .fotoDos {
+    width: unset;
+    grid-column: 1; }
+  .fotoTres {
+    width: unset;
+    grid-column: 1; }
+  .fotoCuatro {
+    width: unset;
+    grid-column: 1; }
+  .fotoCinco {
+    width: unset;
+    grid-column: 1; }
+  .fotoSeis {
+    width: unset;
+    grid-column: 1; }
+  .colorSub {
+    grid-column: 1; } }
 
 .tituloSecu {
   font-family: "Titillium Web", sans-serif;
@@ -128,81 +263,41 @@ div .parrafoUno {
 
 /* index*/
 body {
-  background-color: white; }
+  background-color: white;
+  height: 100%; }
 
 .tiendaGrow {
   text-shadow: 2px 2px black;
   font-family: "Titillium Web", sans-serif;
   font-size: 50px;
-  color: #006400; }
-
-header {
-  margin: 10px 5px 5px 5px; }
-
-.menuPro {
-  display: flex;
+  color: #006400;
   width: 100%;
-  flex-direction: column-reverse; }
+  grid-column-start: 1;
+  grid-column-end: 3; }
 
-.menuCentro {
-  display: flex;
-  flex-direction: row; }
-
-.centro {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start; }
-
-.navbarColor {
-  background-color: #f5dce1; }
+.padre {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 10% 10% 35% 35% 10%;
+  height: 100vh; }
 
 .menuNuevo {
-  display: flex;
-  justify-content: right;
-  padding: 2px;
-  font-size: 15px;
-  justify-content: space-between; }
-  .menuNuevo ul li {
-    font-weight: bold;
-    font-family: "Titillium Web", sans-serif;
-    list-style: none;
-    color: #f5dce1;
-    margin-top: 30px;
-    background-color: #f5dce1;
-    display: inline-block;
-    margin: 2px;
-    padding: 4px;
-    position: relative; }
+  background-color: #f5dce1; }
+
+.menuPro {
+  grid-column: 1/3;
+  width: 100%;
+  display: flex; }
 
 a {
   font-weight: bold;
   text-decoration: none;
   color: #f5dce1; }
 
-@keyframes claselogo {
-  from {
-    transform: scale(0.5); }
-  to {
-    transform: scale(1); } }
-
-.mainContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center; }
-  .mainContainer .claseLogo {
-    width: 400px;
-    height: 400px;
-    margin: 10px;
-    animation-name: claselogo;
-    animation-iteration-count: initial;
-    animation-duration: 5s;
-    animation-timing-function: linear;
-    position: relative; }
-  .mainContainer .colorPro {
-    margin-top: 10px;
-    font-family: "Titillium Web", sans-serif;
-    color: black; }
+.inicio {
+  width: 300px;
+  height: 300px;
+  grid-column: 1/2; }
 
 .triple {
   color: black;
@@ -210,7 +305,7 @@ a {
 
 div .tres {
   display: flex;
-  width: 15%;
+  width: 10%;
   margin-top: 5px; }
 
 div .subtitulo {
@@ -222,31 +317,47 @@ div .subtitulo {
   font-size: 12px;
   margin-top: 20px; }
 
-.piePagina {
-  font-family: "Titillium Web", sans-serif; }
-  .piePagina div .redes {
+.contenedorRedes {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; }
+  .contenedorRedes .redes {
     font-family: "Titillium Web", sans-serif;
     font-weight: bold;
     display: contents;
-    color: #006400; }
+    color: #006400;
+    font-size: small;
+    display: flex; }
+  .contenedorRedes .ig {
+    display: flex;
+    width: 6%;
+    height: 6%;
+    display: flex; }
+  .contenedorRedes .tw {
+    display: flex;
+    width: 6%;
+    height: 6%;
+    margin-top: 10px;
+    display: flex; }
 
-.ig {
+.derechos {
+  font-size: x-small;
+  align-items: center;
   display: flex;
-  width: 3%;
-  height: 4%; }
-
-.tw {
-  display: flex;
-  width: 3%;
-  height: 4%;
-  margin-top: 10px; }
-
-.imagenUno {
-  display: none; }
+  font-family: "Titillium Web", sans-serif; }
 
 #colorSub {
-  width: 100%;
-  text-align: center;
   color: #006400;
+  text-align: center;
   display: flex;
-  flex-direction: column; }
+  justify-content: center;
+  align-items: center;
+  align-items: flex-end;
+  grid-column: 1/3;
+  grid-row: 5/6;
+  width: 100%; }
+
+.headerGrid {
+  width: 100%;
+  grid-column-start: 1;
+  grid-column-end: 3; }

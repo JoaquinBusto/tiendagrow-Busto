@@ -1,16 +1,38 @@
 /*mediaqueries*/ 
-@media (max-width: 576px) and (min-width: 280px){
-    body{
-        background-color: rgb(245, 220, 225);
-    }
-    .tiendaGrow {
+@media (max-width: 576px){
+    .tiendaGrow{
         text-align: center;
-        width: 100%;
+        grid-column: 1;
     }
-    .menuNuevo{
-        background-color: rgb(245, 220, 225);
+    .centro{
         display: flex;
+        width: 100%;
+        grid-column: 1;
         justify-content: center;
+    }
+    .inicio{
+        display: none;
+    }
+    .detalles{
+        grid-column: 1/3;
+        grid-row: 3/5;
+    }
+    .contenedorRedes{
+        grid-row: 5/6;
+    }
+    .nosotros{
+        grid-column: 1/3;
+        grid-row: 3/4;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    .confianza{
+        grid-column: 1/3;
+        grid-row: 4/5;
+        display: flex;
+        padding: 15px;
+        align-content: flex-end;
     }
     .somos{
         color: $textos;
@@ -25,5 +47,43 @@
     .tw{
         width: 3%;
         height: 3%;
+    }
+    .padreTres{
+       grid-template-columns: 1fr;
+       grid-template-rows: 1fr;
+       justify-items: center;
+       justify-content: center;
+    }
+    .fotoUno{
+        width: unset;
+        grid-column: 1;
+        
+    }
+    .fotoDos{
+        width: unset;
+        grid-column: 1;
+        
+    }
+    .fotoTres{
+        width: unset;
+        grid-column: 1;
+    }
+    .fotoCuatro{
+        width: unset;
+        grid-column: 1;
+        
+    }
+    .fotoCinco{
+        width: unset;
+        grid-column: 1;
+        
+    }
+    .fotoSeis{
+        width: unset;
+        grid-column: 1;
+        
+    }
+    .colorSub{
+        grid-column: 1;
     }
 }

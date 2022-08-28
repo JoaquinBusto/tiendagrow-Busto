@@ -5,9 +5,6 @@
     box-sizing: border-box;
 }
 
-.menuMobile {
-    display: none;
-}
 
 //import
 @import "base/variables";
@@ -23,6 +20,7 @@
 /* index*/
 body {
     background-color: $colorPrincipal ;
+    height: 100%;
 }
 
 .tiendaGrow {
@@ -30,104 +28,48 @@ body {
     font-family: $fuenteOriginal;
     font-size: 50px;
     color: #006400;
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 3;
 }
-
-header {
-    margin: 10px 5px 5px 5px;
+.padre{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 10% 10% 35% 35% 10%;
+    height: 100vh;                     
+}
+.menuNuevo{
+    background-color: $colorSecundario
 }
 .menuPro{
-    display:flex;
+    grid-column: 1/3;
     width: 100%;
-    flex-direction: column-reverse;
-}
-.menuCentro{
     display: flex;
-    flex-direction: row;
-}
-.centro{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-   
-}
-.navbarColor{
-    background-color: $colorSecundario;
-}
-.menuNuevo {
-    display: flex;
-    justify-content: right;
-    padding: 2px;
-    font-size:15px;
-    justify-content: space-between;
-    ul {
-        li {
-            font-weight: bold;
-            font-family: $fuenteOriginal;
-            list-style: none;
-            color: $colorSecundario;
-            margin-top: 30px;
-            background-color: $colorSecundario;
-            display: inline-block;
-            margin: 2px;
-            padding: 4px;
-            position: relative;
-            
-        }
-    }
-}
-
-
+} 
 a {
     font-weight: bold;
     text-decoration: none;
     color: $colorSecundario;
 }
 
-@keyframes claselogo {
-    from {
-        transform: scale(0.5);
-    }
-
-    to {
-        transform: scale(1);
-    }
+.inicio {
+    width: 300px;
+    height: 300px;
+    grid-column: 1/2;
 }
 
-.mainContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-
-    .claseLogo {
-        @include medidas(400px, 400px);
-        margin: 10px;
-        animation-name: claselogo;
-        animation-iteration-count: initial;
-        animation-duration: 5s;
-        animation-timing-function: linear;
-        position: relative;
-    }
-
-    .colorPro {
-        margin-top: 10px;
-        font-family: $fuenteOriginal;
-        color: $textos;
-    }
-}
 .triple{
     color: $textos;
     font-family: $fuenteOriginal;
 }
-
-div .tres {
+div {
+ .tres {
     display: flex;
-    width: 15%;
+    width: 10%;
     margin-top: 5px;
    
-}
-
-div .subtitulo {
+        }
+ .subtitulo {
     color:$textos;
     font-family: $fuenteOriginal;
     font-weight: bold;
@@ -135,45 +77,56 @@ div .subtitulo {
     justify-content: center;
     font-size: 12px;
     margin-top: 20px;
-
-
+        }
 }
+.contenedorRedes {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 
-.piePagina {
-  
-    font-family: $fuenteOriginal;
-    
-
-    div .redes {
+    .redes {
         font-family: $fuenteOriginal;
         font-weight: bold;
         display: contents;
         color: $opaco;
+        font-size: small;
+        display: flex;
+    }
+    .ig {
+        display: flex;
+        width: 6%;
+        height: 6%;
+        display: flex;
+    
+    }
+    .tw {
+        display: flex;
+        width: 6%;
+        height: 6%;
+        margin-top: 10px;
+        display: flex;
     }
 }
-
-.ig {
+.derechos{
+    font-size: x-small;
+    align-items: center;
     display: flex;
-    width: 3%;
-    height: 4%;
+    font-family: $fuenteOriginal;
 }
-
-.tw {
-    display: flex;
-    width: 3%;
-    height: 4%;
-    margin-top: 10px;
-}
-
-.imagenUno {
-    display: none;
-}
-
 #colorSub {
-    width: 100%;
-    text-align: center;
     color: $opaco;
+    text-align: center;
     display: flex;
-    flex-direction: column;
-
+    justify-content: center;
+    align-items: center;
+    align-items: flex-end;
+    grid-column: 1/3;
+    grid-row: 5/6;
+    width: 100%;
+}
+.headerGrid{
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 3;
 };
+

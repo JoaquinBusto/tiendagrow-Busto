@@ -1,9 +1,23 @@
 /*Cultivo*/
+.padreDos{
+    height: 100vh;
+    display: grid;
+    grid-template-areas: "titulo titulo"
+                         "menu menu"
+                         "parrafo parrafo"
+                         "redes footer";
+    grid-template-rows: 10% 10% auto 10%;
+    grid-template-columns: 50% 50%;
+}
+
 .tituloSecu {
     @extend %principal;
     list-style: none;
     color: $textos;
     font-size: x-large;
+}
+.parrafo{
+    grid-area: parrafo;
 }
 div .parrafoUno{
     list-style: none;
@@ -21,4 +35,7 @@ div .parrafoUno{
     margin-right: auto;
     margin-left: auto;
     margin-top: 20px;
+}
+.secundario{
+    list-style: none;
 }
