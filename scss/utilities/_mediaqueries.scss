@@ -16,6 +16,7 @@
     .detalles{
         grid-column: 1/3;
         grid-row: 3/5;
+        list-style: none;
     }
     .contenedorRedes{
         grid-row: 5/6;
@@ -28,8 +29,9 @@
         justify-content: center;
     }
     .confianza{
-        grid-column: 1/3;
-        grid-row: 4/5;
+        grid-column: 1;
+        grid-row: unset;
+        height: 500px;
     }
     .somos{
         color: $textos;
